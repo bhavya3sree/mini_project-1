@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pet Shop Menu</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f7d2d2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 300px;
+    height: 100px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.menu li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: #ff6600;
+}
+.content img {
+filter: brightness(85%);
+}
+.content .banner2{
+    filter: brightness(125%);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .menu {
+        margin-top: 20px;
+    }
+
+    .menu li {
+        display: block;
+        margin: 10px 0;
+    }
+    .content img{
+        width: 400px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <img class="logo" src="logo.png" alt="Pet Shop Logo">
+        <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Pet shop website</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="pet_shop.html" target="_blank">Home</a></li>
+                <li><a href="login.html" target="_blank">login</a></li>
+                <li><a href="header_banner.html" target="_blank">Services</a></li>
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="content">
+    <img src="banner1.jpg" width="1000px">
+    <div style="margin-left: 1025px;margin-top: -400px;">
+        <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">pet sale</h1><br>
+        <p style="font-family: cursive;">This pet shop contains pets<br>of <b>dogs</b>(breeds of Labrador Retriever<br>
+            German Shepherd<br>
+            Golden Retriever<br>
+            Bulldog<br>
+            Beagle<br>
+            Poodle),<b>cats</b></p>
+            
+    </div>
+    <img src="banner2.jpg" width="900px" height="400px" class="banner2" style="margin-top: 150px;margin-left: 400px; ">
+    <div style="margin-right: 980px;margin-top: -300px;">
+        <h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Webinar on pet sitting</h2><br>
+        <p style="font-family: cursive;">pet shop conducts  <br>
+                                        a webinar on pet sitting.<br>
+                                         in webinar discuss about <br>
+                                         how the pet should be treated<br>
+                                          and how to do pet caring ,and training.</p>
+            
+    </div>
+</div>
+
+</body>
+</html>
